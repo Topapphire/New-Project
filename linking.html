@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Linking in HTML</title>
+    </head>
+    <body>
+        <h1>Links in HTML</h1>
+        <p>In this lesson, we examine absolute and relative URLs, and the target attribute for linking in HTML.</p>
+        <div class="URLs">
+            <h2>Absolute and Relative URLs</h2>
+            <a href="https://example.com/about.html">This is an absolute URL.</a>
+            <p>It will always open the About Us page on www.example.com no matter where the link is placed.</p>
+            <a href="./textbasics.html">This is a relative URL.</a>
+            <p>It uses the location of textbasics.html relative to the page you're currently viewing to direct the user to that page.</p>
+            <p>It's best to use relative links as they save time on maintenance.</p>
+            <p>For instance, were the website owner to change their domain, they would need to replace all instances of "https://example.com/about.html" on all pages with the corresponding URL in the new domain. However, clicking the "textbasics.html" link will always redirect to textbasics.html no matter the domain name.</p>
+        </div>
+        <div class="target attribute">
+            <h2>The "target" attribute</h2>
+            <p>The target attribute specifies where to open the linked webpage.</p>
+            <p>By default, links wil open in the same tab you're currently on.</p>
+            <p>The <a href="./textbasics.html" target="_blank">"_blank" target</a> changes this behavior and opens the link in a new tab.</p>
+        </div>
+        <div class="all-together">
+            <h1>Welcome to My Blog</h1>
+            <p>Check out my <a href="https://github.com/Topapphire" target="_blank">Github Profile</a> for more web development knowledge.</p>
+            <p>Also try a simple lesson on text formatting in HTML via the <a href="./textbasics.html">Text Basics</a> lesson.</p>
+        </div>
+    </body>
+</html>
