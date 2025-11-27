@@ -5,74 +5,93 @@
         <title>Tables in HTML</title>
     </head>
     <body>
-        <h1>Tables in HTML</h1>
-        <p>This lesson contains basic table syntax for organizing data in rows and columns. It also explains the concepts of scope and cell merging with HTML.</p>
-        <div class="Simple table syntax">
-            <h2>Creating Simple Tables</h2>
-            <p>Create tables using the &lt;table&gt; tag. &lt;tr&gt; creates table rows, &lt;td&gt; refers to a cell, and &lt;th&gt; to table header.</p>
-            <table>
-                <tr>
-                    <th>Month</th>
-                    <th>Savings</th>
-                </tr>
-                <tr>
-                    <td>January</td>
-                    <td>$100</td>
-                </tr>
-                <tr>
-                    <td>February</td>
-                    <td>$80</td>
-                </tr>
-            </table>
-        </div>
-        <div class="scope">
-            <h2>Specifying Scope</h2>
-            <p>The scope attribute specifies which row(s) or column(s) an header applies to.</p>
-            <p>Scopes apply to the column (scope="col") by deafult, but you may change the behavior using the syntax scope="row".</p>
-            <table>
-                <tr>
-                    <th scope="col">Month</th>
-                    <th scope="col">Savings</th>
-                </tr>
-                <tr>
-                    <th scope="row">January</th>
-                    <td>$100</td>
-                </tr>
-            </table>
-        </div>
-        <div class="merging cells">
-            <h2>Merging Cells</h2>
-            <p>You can merge cells across rows or columns in HTML. Use either the rowspan (to merge cells vertically across rows) or colspan (to merge cells horizontally across columns) attributes depending on your goal.</p>
-            <table>
-                <tr>
-                    <th>Person</th>
-                    <th colspan="2">Details</th>
-                </tr>
-                <tr>
-                    <td>John Doe</td>
-                    <td>Age: 30</td>
-                    <td>Occupation: Developer</td>
-                </tr>
-            </table>
-        </div>
-        <div class="accessibility">
-            <h2>Making Tables Accessible</h2>
-            <p>It is a best practice to add captions to tables, use the scope attribute with headers, and use semantic markup correctly so screen readers know how to handle your tables.</p>
-            <table>
-                <caption>Monthly Savings</caption>
-                <tr>
-                    <th scope="col">Month</th>
-                    <th scope="col">Savings</th>
-                </tr>
-                <tr>
-                    <th scope="row">January</th>
-                    <td>$100</td>
-                </tr>
-                <tr>
-                    <th scope="row">February</th>
-                    <td>$80</td>
-                </tr>
-            </table>
-        </div>
+        <header>
+            <nav>
+                <h2>Skip to any of these lessons</h2>
+                <ul>
+                    <li><a href="./index.html">Introduction to HTML</a></li>
+                    <li><a href="./nav.html">Navigation</a></li>
+                    <li><a href="./textbasics.html">Text Formatting in HTML</a></li>
+                    <li><a href="./linking.html">Links</a></li>
+                    <li><a href="./audio-video.html">Audio and Video</a></li>
+                    <li><a href="./tables.html">Tables</a></li>
+                    <li><a href="./forms.html">Forms</a></li>
+                    <li><a href="./images.html">Images</a></li>
+                    <li><a href="./lists.html">Lists</a></li>
+                    <li><a href="./css-basics.css">CSS Basics</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Tables in HTML</h1>
+            <p>This lesson contains basic table syntax for organizing data in rows and columns. It also explains the concepts of scope and cell merging with HTML.</p>
+            <div class="Simple table syntax">
+                <h2>Creating Simple Tables</h2>
+                <p>Create tables using the &lt;table&gt; tag. &lt;tr&gt; creates table rows, &lt;td&gt; refers to a cell, and &lt;th&gt; to table header.</p>
+                <table>
+                    <tr>
+                        <th>Month</th>
+                        <th>Savings</th>
+                    </tr>
+                    <tr>
+                        <td>January</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>February</td>
+                        <td>$80</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="scope">
+                <h2>Specifying Scope</h2>
+                <p>The scope attribute specifies which row(s) or column(s) an header applies to.</p>
+                <p>Scopes apply to the column (scope="col") by deafult, but you may change the behavior using the syntax scope="row".</p>
+                <table>
+                    <tr>
+                        <th scope="col">Month</th>
+                        <th scope="col">Savings</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">January</th>
+                        <td>$100</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="merging cells">
+                <h2>Merging Cells</h2>
+                <p>You can merge cells across rows or columns in HTML. Use either the rowspan (to merge cells vertically across rows) or colspan (to merge cells horizontally across columns) attributes depending on your goal.</p>
+                <table>
+                    <tr>
+                        <th>Person</th>
+                        <th colspan="2">Details</th>
+                    </tr>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Age: 30</td>
+                        <td>Occupation: Developer</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="accessibility">
+                <h2>Making Tables Accessible</h2>
+                <p>It is a best practice to add captions to tables, use the scope attribute with headers, and use semantic markup correctly so screen readers know how to handle your tables.</p>
+                <table>
+                    <caption>Monthly Savings</caption>
+                    <tr>
+                        <th scope="col">Month</th>
+                        <th scope="col">Savings</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">January</th>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">February</th>
+                        <td>$80</td>
+                    </tr>
+                </table>
+            </div>
+        </main>
     </body>
 </html>

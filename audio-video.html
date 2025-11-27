@@ -5,33 +5,52 @@
         <title>Audio & Video</title>
     </head>
     <body>
-        <h1>Audio & Video</h1>
-        <p>This lesson explains how to embed audio and video files in your webpage, use different sources, and add accessibility features to media files in HTML.</p>
-        <div class="audio-video">
-            <h2>Embedding Audio and Video</h2>
-            <p>Use the &lt;audio&gt; and &lt;video&gt; elements to include audio and video content on your web page. It's a best practice to add width and height attributes to specify the video's size. Add the &lt;controls&gt; attributes to display the browser's native playback controls.</p>
-            <audio controls>
-                <source src="./assets/audio/Italy (Refix) || TrendyBeatz.com.mp3" type="audio/mp3">
-            </audio>
-            <video controls width="250">
-                <source src="./assets/video/peach-and-goma.mp4" type="video/mp4">
-            </video>
-        </div>
-        <div class="source">
-            <h2>Using the &lt;source&gt; Element</h2>
-            <p>The &lt;source&gt; element allows you to specify multiple media sources for the same audio or video, so the browser can choose the most compatible format for it.</p>
-            <video controls width="250">
-                <source src="movie.mp4" type="video/mp4">
-                <source src="movie.ogg" type="video/ogg">
-            </video>
-        </div>
-        <div class="AV accessibility">
-            <h2>Accessibbility Features for Audio & Video</h2>
-            <p>Accessibility features for audio and video content include transcripts, video subtitles and captions (using the &lt;track&gt;), descriptive audio</p>
-            <video controls width="250">
-                <source src="movie.mp4" type="video.mp4">
-                <track src="captions_en.vtt" kind="captions" srclang="en" label="English">
-            </video>
-        </div>
+        <header>
+            <nav>
+                <h2>Skip to any of these lessons</h2>
+                <ul>
+                    <li><a href="./index.html">Introduction to HTML</a></li>
+                    <li><a href="./nav.html">Navigation</a></li>
+                    <li><a href="./textbasics.html">Text Formatting in HTML</a></li>
+                    <li><a href="./linking.html">Links</a></li>
+                    <li><a href="./audio-video.html">Audio and Video</a></li>
+                    <li><a href="./tables.html">Tables</a></li>
+                    <li><a href="./forms.html">Forms</a></li>
+                    <li><a href="./images.html">Images</a></li>
+                    <li><a href="./lists.html">Lists</a></li>
+                    <li><a href="./css-basics.css">CSS Basics</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Audio & Video</h1>
+            <p>This lesson explains how to embed audio and video files in your webpage, use different sources, and add accessibility features to media files in HTML.</p>
+            <div class="audio-video">
+                <h2>Embedding Audio and Video</h2>
+                <p>Use the &lt;audio&gt; and &lt;video&gt; elements to include audio and video content on your web page. It's a best practice to add width and height attributes to specify the video's size. Add the &lt;controls&gt; attributes to display the browser's native playback controls.</p>
+                <audio controls>
+                    <source src="./assets/audio/Italy (Refix) || TrendyBeatz.com.mp3" type="audio/mp3">
+                </audio>
+                <video controls width="250">
+                    <source src="./assets/video/peach-and-goma.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="source">
+                <h2>Using the &lt;source&gt; Element</h2>
+                <p>The &lt;source&gt; element allows you to specify multiple media sources for the same audio or video, so the browser can choose the most compatible format for it.</p>
+                <video controls width="250">
+                    <source src="movie.mp4" type="video/mp4">
+                    <source src="movie.ogg" type="video/ogg">
+                </video>
+            </div>
+            <div class="AV accessibility">
+                <h2>Accessibbility Features for Audio & Video</h2>
+                <p>Accessibility features for audio and video content include transcripts, video subtitles and captions (using the &lt;track&gt;), descriptive audio</p>
+                <video controls width="250">
+                    <source src="movie.mp4" type="video.mp4">
+                    <track src="captions_en.vtt" kind="captions" srclang="en" label="English">
+                </video>
+            </div>
+        </main>
     </body>
 </html>
